@@ -6,7 +6,7 @@
   tasks:
     - name: Building Docker Image
       docker_image:
-        name: team33-neogym:latest    # ชื่อของ Docker image
+        name: 66022703:latest    # ชื่อของ Docker image
         source: build
         build:
           path: ~/team33-neogym       # path ที่เก็บไฟล์ source code

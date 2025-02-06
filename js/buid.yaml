@@ -9,6 +9,6 @@
         name: 66022703:latest    # ชื่อของ Docker image
         source: build
         build:
-          path: ~/team33-neogym       # path ที่เก็บไฟล์ source code
+          path: ~/66022703       # path ที่เก็บไฟล์ source code
         state: present
         force_source: true

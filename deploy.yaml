@@ -1,0 +1,14 @@
+- name: Deploy Docker Container
+  hosts: dockerservers
+  gather_facts: false
+  remote_user: root
+
+  tasks:
+    - name: Creating the Container
+      docker_container:
+        name: 66022703-container   # ชื่อของ Docker container
+        image: 66022703:latest     # ชื่อของ Docker image
+        ports:
+          - "80:80"                     # พอร์ต 33 (host) ถูกแมปไปยังพอร์ต 80 (container)
+        state: started                  # เริ่มต้น container หลังจากสร้างเสร็จ
+        restart: true                   # รีสตาร์ทอัตโนมัติหาก container หยุดทำงาน
